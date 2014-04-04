@@ -1,0 +1,38 @@
+/*-----------------------------------------------------------
+PROGRAMA:	PRIMEROS.cpp 
+FECHA:		4/4/2014
+VERSION:	V1
+AUTOR:		MARCO SIÑANIZ
+OBS:		MUESTRA LA SUMA DE LOS N PRIMEROS NUMEROS NATURALES.
+------------------------------------------------------------*/
+
+#include "stdafx.h"
+#include "conio.h"
+#include "stdlib.h"
+#include "stdio.h"
+
+
+void main()
+{int A, B, P, May , men;
+printf("\n\n INGRESAR DOS NUMEROS ENTEROS:   ");
+scanf("%d%d", &A,&B);
+if (A > B) 
+  {May = A; men = B;
+  }
+else       
+  {May = B; men = A;
+  }
+if (men%2 == 0) 
+  {P = men;
+  }
+else       
+  {P = men+1;
+  }  
+while (P<=May)
+  {printf("\n\n %d ", P);
+   P=P+2;
+  }
+
+printf("\n\n ");
+system ("pause");
+}
